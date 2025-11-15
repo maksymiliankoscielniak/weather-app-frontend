@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: montserrat; 
+    background-color: #f5ebf0; 
+    background-image: url('assets/images/weatherbg.png');
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+}
