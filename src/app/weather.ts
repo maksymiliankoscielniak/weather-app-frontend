@@ -12,7 +12,7 @@ export class Weather {
     if (window.location.hostname === 'localhost') {
       this.apiUrl = 'http://localhost:5000/api';
     } else {
-      this.apiUrl = 'https://weather-app-backend-wy11.onrender.com';
+      this.apiUrl = 'https://weather-app-backend-wy11.onrender.com/api';
     }
   }
 
