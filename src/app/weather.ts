@@ -6,15 +6,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class Weather {
-  constructor(private http: HttpClient) {}
+  private apiUrl: string;
+
+  constructor(private http: HttpClient) {
+    if (window.location.hostname === 'localhost') {
+      this.apiUrl = 'http://localhost:5000/api';
+    } else {
+      this.apiUrl = 'https://weather-app-backend-wy11.onrender.com';
+    }
+  }
 
   getWeather(city: string): Observable<any> {
-    const url = `http://localhost:5000/api/weather?city=${city}`;
+    const url = `${this.apiUrl}/weather?city=${city}`;
     return this.http.get(url);
   }
 
   getCitySuggestions(query: string): Observable<any[]> {
-    const url = `http://localhost:5000/api/cities?query=${query}`;
+    const url = `${this.apiUrl}/cities?query=${query}`;
     return this.http.get<any[]>(url);
   }
 }
