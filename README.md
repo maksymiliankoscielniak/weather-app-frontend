@@ -51,6 +51,11 @@ source venv/bin/activate  # (or .\venv\Scripts\activate on Windows)
 # Install dependencies
 pip install -r requirements.txt
 
+#Create your `.env` file:
+    * In the root folder, create a file named `.env`.
+    * Add your OpenWeatherMap API key to it:
+        `API_KEY="your_secret_api_key_goes_here"`
+
 # Run the server
 python app.py
 ```
