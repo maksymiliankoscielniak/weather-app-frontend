@@ -1,5 +1,7 @@
 # 🌦️ Full-Stack Weather App
 
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-NETLIFY-3366ff.svg)](https://weatherinurplace.netlify.app)
+
 > A clean, responsive weather application built with an Angular frontend and a custom Python/Flask backend. This app provides real-time weather data, a 5-city autocomplete search, and a custom-designed UI.
 
 ## 🚀 Live Preview
